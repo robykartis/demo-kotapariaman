@@ -1,0 +1,3 @@
+database=satu2886_demo_satudata
+username=satu2886_user_demo
+password=Tiram_1993

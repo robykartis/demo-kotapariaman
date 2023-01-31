@@ -34,52 +34,13 @@
                     <a class="nav-main-link {{ \Request::route()->getName() == 'Kota.index' ? 'active' : '' }}"
                         href="{{ $routekota }}">
                         <i class="nav-main-link-icon fa fa-compass"></i>
-                        <span class="nav-main-link-name">Data Kota</span>
+                        <span class="nav-main-link-name">Home</span>
                     </a>
                 </li>
 
 
                 <li class="nav-main-heading">More</li>
 
-
-                <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
-                        aria-expanded="false" href="#">
-                        <i class="nav-main-link-icon fa fa-folder-open"></i>
-                        <span class="nav-main-link-name">Kecamatan</span>
-                    </a>
-                    <ul class="nav-main-submenu">
-                        <li class="nav-main-item">
-                            <a class="nav-main-link {{ \Request::route()->getName() == 'kec.utara' ? 'active' : '' }}"
-                                href="{{ route('kec.utara') }}">
-                                <i class="nav-main-link-icon fa fa-file-lines"></i>
-                                <span class="nav-main-link-name">Pariaman Utara</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-main-item">
-                            <a class="nav-main-link" href="">
-                                <i class="nav-main-link-icon fa fa-file-lines"></i>
-                                <span class="nav-main-link-name">Pariaman Tengah</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-main-item">
-                            <a class="nav-main-link" href="">
-                                <i class="nav-main-link-icon fa fa-file-lines"></i>
-                                <span class="nav-main-link-name">Pariaman Selatan</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-main-item">
-                            <a class="nav-main-link" href="">
-                                <i class="nav-main-link-icon fa fa-file-lines"></i>
-                                <span class="nav-main-link-name">Pariaman Timur</span>
-                            </a>
-                        </li>
-
-                    </ul>
-                </li>
 
                 <li class="nav-main-item">
                     <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
@@ -330,51 +291,14 @@
                     <a class="nav-main-link {{ \Request::route()->getName() == 'Kota.index' ? 'active' : '' }}"
                         href="{{ $routekota }}">
                         <i class="nav-main-link-icon fa fa-compass"></i>
-                        <span class="nav-main-link-name">Data Kota</span>
+                        <span class="nav-main-link-name">Home</span>
                     </a>
                 </li>
 
 
                 <li class="nav-main-heading">More</li>
 
-                <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
-                        aria-expanded="false" href="#">
-                        <i class="nav-main-link-icon fa fa-folder-open"></i>
-                        <span class="nav-main-link-name">Kecamatan</span>
-                    </a>
-                    <ul class="nav-main-submenu">
-                        <li class="nav-main-item">
-                            <a class="nav-main-link  {{ \Request::route()->getName() == 'kec.utara' ? 'active' : '' }}"
-                                href="{{ route('kec.utara') }}">
-                                <i class="nav-main-link-icon fa fa-file-lines"></i>
-                                <span class="nav-main-link-name">Pariaman Utara</span>
-                            </a>
-                        </li>
 
-                        <li class="nav-main-item">
-                            <a class="nav-main-link" href="">
-                                <i class="nav-main-link-icon fa fa-file-lines"></i>
-                                <span class="nav-main-link-name">Pariaman Tengah</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-main-item">
-                            <a class="nav-main-link" href="">
-                                <i class="nav-main-link-icon fa fa-file-lines"></i>
-                                <span class="nav-main-link-name">Pariaman Selatan</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-main-item">
-                            <a class="nav-main-link" href="">
-                                <i class="nav-main-link-icon fa fa-file-lines"></i>
-                                <span class="nav-main-link-name">Pariaman Timur</span>
-                            </a>
-                        </li>
-
-                    </ul>
-                </li>
 
                 <li class="nav-main-item">
                     <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
@@ -593,8 +517,9 @@
         </div>
         <!-- END Left Section -->
         <!-- Right Section -->
-        <div>
-            <!-- Notifications Dropdown -->
+
+        {{-- <div>
+          
             @if (Route::has('login'))
                 <div class="d-inline-block">
                     @auth
@@ -607,25 +532,18 @@
                             id="page-header-notifications-dropdown" aria-haspopup="true" aria-expanded="false">
                             Login
                         </a>
-                        {{-- @if (Route::has('register'))
-                            <a href="{{ route('login') }}" type="button" class="btn btn-alt-secondary"
-                                id="page-header-notifications-dropdown" aria-haspopup="true" aria-expanded="false">
-                                Register
-                            </a>
-                        @endif --}}
+                       
                     @endauth
                 </div>
             @endif
-            <!-- END Notifications Dropdown -->
-            <!-- Toggle Sidebar -->
-            <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+          
             <button type="button" class="btn btn-alt-secondary d-lg-none" data-toggle="layout"
                 data-action="sidebar_toggle">
                 <i class="fa fa-fw fa-bars"></i>
             </button>
-            <!-- END Toggle Sidebar -->
-        </div>
-        <!-- END Right Section -->
+           
+        </div> --}}
+
     </div>
     <!-- END Header Content -->
 
